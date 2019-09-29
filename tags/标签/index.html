@@ -72,12 +72,18 @@
 </header>
 
 		<main class="main">
-			<section class="posts">
-	<article class="post_full"> 
+			<div class="tag-page-container">
+     <div class="tag-page-title">
+     	<i class="fa fa-tag fa-lg"></i><h2 class="tag_title">标签</h2>
+     </div>
+     <div class="tag-page-cards">
+          
+             <section class="posts">
+                <article class="post_full post_except"> 
 		<h1 class="post-title">
-			<div class="post-title-link">
-				Hexo标签使用!
-			</div>
+			<a class="post-title-link" href="/
+				2019/09/25/我的第二篇博客/">Hexo标签使用!
+			</a>
 		</h1>
 		
 		<div class="post-info">
@@ -92,13 +98,7 @@
 						<i class="fa fa-clock-o"></i>&nbsp2 分钟&nbsp&nbsp&nbsp
 					</span>
 			
-			<div class="post-tags">
-				
-    
-        <i class="fa fa-tags"></i>  <a href="/tags/标签/"> 标签</a>
-    
-			</div>
-		</div>
+		</div>		
 		<div class="post-content">
 			<h1 id="Hexo使用攻略-添加分类及标签"><a href="#Hexo使用攻略-添加分类及标签" class="headerlink" title="Hexo使用攻略-添加分类及标签"></a>Hexo使用攻略-添加分类及标签</h1><p>#1、创建“分类”选项</p>
 <h2 id="1-1-生成“分类”页并添加tpye属性"><a href="#1-1-生成“分类”页并添加tpye属性" class="headerlink" title="1.1 生成“分类”页并添加tpye属性"></a>1.1 生成“分类”页并添加tpye属性</h2><p>打开命令行，进入博客所在文件夹。执行命令<br><code>$ hexo new page categories</code><br>成功后会提示：<br><code>INFO  Created: ~/Documents/blog/source/categories/index.md</code><br>根据上面的路径，找到index.md这个文件，打开后默认内容是这样的：<br><code>---title: 文章分类 date: 2017-05-27 13:47:40---</code><br>添加type: “categories”到内容中，添加后是这样的：<br><code>---title: 文章分类 date: 2017-05-27 13:47:40 type: &quot;categories&quot;---</code></p>
@@ -119,37 +119,25 @@ categories:
 <p>细心的朋友可能已经发现，这两个的设置几乎一模一样！是的，没错，思路都是一样的。所以我们可以打开scaffolds/post.md文件，在tages:上面加入categories:,保存后，之后执行hexo new 文章名命令生成的文件，页面里就有categories:项了。</p>
 
 		</div>
-		<div class="post-nav">
-			<div class="post-nav-prev">
-					
-			</div>
-			<div class="post-nav-next">
-		      	
-			      	<a href="/2019/09/25/我的第一篇博客/" rel="next" title="我的第一篇博客!">
-			        	我的第一篇博客!&nbsp<i class="fa fa-angle-double-right"></i>
-			      	</a>
-			      	
-		    </div>
-		    <div class="clear"></div>
+		<div class="sub-container">
+			<span class="post-tags">				
+				
+    
+        <i class="fa fa-tags"></i>  <a href="/tags/标签/"> 标签</a>
+    
+			</span>
+			
 		</div>
-		
+	
 </article>
 
-	<div class="post-toc">
-		<div class="toc-top">
-			<i class="fa fa-th-large"></i>文章目录
-		</div>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo使用攻略-添加分类及标签"><span class="toc-text">Hexo使用攻略-添加分类及标签</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-生成“分类”页并添加tpye属性"><span class="toc-text">1.1 生成“分类”页并添加tpye属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-给文章添加“categories”属性"><span class="toc-text">1.2 给文章添加“categories”属性</span></a></li></ol></li></ol>
-	</div>
+             </section>	
+          
+     </div>
+</div>
 
 
 
-
-
-
-
-
-</section>	
 
 		</main>
 		<footer class="footer">
@@ -171,14 +159,6 @@ categories:
 <script src="/js/jquery.fancyboxStart.js"></script>
 <script src="/js/search.js"></script>
 
-	
-		<script src="/js/toc.js"></script>
-		<script src="/js/jquery.toTop.js"></script>
-	
-
-
-	<script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
-	<script src="/js/IndexToTop.js"></script>
 
 
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid="></script>

@@ -77,7 +77,7 @@
 		<article class="post_full post_except"> 
 		<h1 class="post-title">
 			<a class="post-title-link" href="/
-				2019/09/25/我的第二篇博客/">我的第二篇博客!
+				2019/09/25/我的第二篇博客/">Hexo标签使用!
 			</a>
 		</h1>
 		
@@ -87,21 +87,39 @@
 			</div>
 			
 					<span class="post-words">
-						<i class="fa fa-pencil-square-o"></i>&nbsp28&nbspwords&nbsp&nbsp
+						<i class="fa fa-pencil-square-o"></i>&nbsp675&nbsp字&nbsp&nbsp
 					</span>
 					<span class="post-time">
-						<i class="fa fa-clock-o"></i>&nbsp1 mins&nbsp&nbsp&nbsp
+						<i class="fa fa-clock-o"></i>&nbsp2 分钟&nbsp&nbsp&nbsp
 					</span>
 			
 		</div>		
 		<div class="post-content">
-			<h1 id="关于什么事没什"><a href="#关于什么事没什" class="headerlink" title="关于什么事没什"></a>关于什么事没什</h1><p>可以是是是是是</p>
-<h2 id="得到的的多多"><a href="#得到的的多多" class="headerlink" title="得到的的多多"></a>得到的的多多</h2><p>的九分裤低筋粉的</p>
+			<h1 id="Hexo使用攻略-添加分类及标签"><a href="#Hexo使用攻略-添加分类及标签" class="headerlink" title="Hexo使用攻略-添加分类及标签"></a>Hexo使用攻略-添加分类及标签</h1><p>#1、创建“分类”选项</p>
+<h2 id="1-1-生成“分类”页并添加tpye属性"><a href="#1-1-生成“分类”页并添加tpye属性" class="headerlink" title="1.1 生成“分类”页并添加tpye属性"></a>1.1 生成“分类”页并添加tpye属性</h2><p>打开命令行，进入博客所在文件夹。执行命令<br><code>$ hexo new page categories</code><br>成功后会提示：<br><code>INFO  Created: ~/Documents/blog/source/categories/index.md</code><br>根据上面的路径，找到index.md这个文件，打开后默认内容是这样的：<br><code>---title: 文章分类 date: 2017-05-27 13:47:40---</code><br>添加type: “categories”到内容中，添加后是这样的：<br><code>---title: 文章分类 date: 2017-05-27 13:47:40 type: &quot;categories&quot;---</code></p>
+<h2 id="1-2-给文章添加“categories”属性"><a href="#1-2-给文章添加“categories”属性" class="headerlink" title="1.2 给文章添加“categories”属性"></a>1.2 给文章添加“categories”属性</h2><p>打开需要添加分类的文章，为其添加categories属性。下方的categories: web前端表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。<br><code>---title: jQuery对表单的操作及更多应用 date: 2017-05-26 12:12:57categories:- web前端---</code><br>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了categories: xxx的文章才会被收录到首页的“分类”中。</p>
+<p>#2创建“标签”选项</p>
+<p>##2.1 生成“标签”页并添加tpye属性<br>打开命令行，进入博客所在文件夹。执行命令<br><code>$ hexo new page tags</code><br>成功后会提示：<br><code>INFO  Created: ~/Documents/blog/source/tags/index.md</code><br>根据上面的路径，找到index.md这个文件，打开后默认内容是这样的：<br><code>---title: 标签 date: 2017-05-27 14:22:08 ---</code><br>添加type: “tags”到内容中，添加后是这样的：<br><code>--- title: 文章分类 date: 2017-05-27 13:47:40  type: &quot;tags&quot; ---</code><br>保存并关闭文件。</p>
+<p>##2.2 给文章添加“tags”属性<br>打开需要添加标签的文章，为其添加tags属性。下方的tags:下方的- jQuery - 表格</p>
+<ul>
+<li>表单验证就是这篇文章的标签了<pre><code>---title: jQuery对表单的操作及更多应用 
+date: 2017-05-26 12:12:57 
+categories:
+ - web前端tags:
+ - jQuery 
+ - 表格 
+ - 表单验证---</code></pre>
+至此，成功给文章添加分类，点击首页的“标签”可以看到该标签下的所有文章。当然，只有添加了tags: xxx的文章才会被收录到首页的“标签”中。</li>
+</ul>
+<p>细心的朋友可能已经发现，这两个的设置几乎一模一样！是的，没错，思路都是一样的。所以我们可以打开scaffolds/post.md文件，在tages:上面加入categories:,保存后，之后执行hexo new 文章名命令生成的文件，页面里就有categories:项了。</p>
 
 		</div>
 		<div class="sub-container">
 			<span class="post-tags">				
 				
+    
+        <i class="fa fa-tags"></i>  <a href="/tags/标签/"> 标签</a>
+    
 			</span>
 			
 		</div>
@@ -122,10 +140,10 @@
 			</div>
 			
 					<span class="post-words">
-						<i class="fa fa-pencil-square-o"></i>&nbsp5&nbspwords&nbsp&nbsp
+						<i class="fa fa-pencil-square-o"></i>&nbsp5&nbsp字&nbsp&nbsp
 					</span>
 					<span class="post-time">
-						<i class="fa fa-clock-o"></i>&nbsp1 mins&nbsp&nbsp&nbsp
+						<i class="fa fa-clock-o"></i>&nbsp1 分钟&nbsp&nbsp&nbsp
 					</span>
 			
 		</div>		
@@ -156,10 +174,10 @@
 			</div>
 			
 					<span class="post-words">
-						<i class="fa fa-pencil-square-o"></i>&nbsp73&nbspwords&nbsp&nbsp
+						<i class="fa fa-pencil-square-o"></i>&nbsp73&nbsp字&nbsp&nbsp
 					</span>
 					<span class="post-time">
-						<i class="fa fa-clock-o"></i>&nbsp1 mins&nbsp&nbsp&nbsp
+						<i class="fa fa-clock-o"></i>&nbsp1 分钟&nbsp&nbsp&nbsp
 					</span>
 			
 		</div>		

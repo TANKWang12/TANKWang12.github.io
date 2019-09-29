@@ -32,7 +32,7 @@ body {
   cursor: url("image/cross.cur"), auto;
 }
 .header {
-  height: 330px;
+  height: 300px;
   font-family: Lato;
   background: url("https://raw.githubusercontent.com/Chorer/MyBlog-Pic/master/Myblogs/hf.jpg") -266px -172px;
   font-weight: bold;
@@ -85,7 +85,7 @@ body {
 .header .header_top .navbar .menu .menu-item .menu-item-link {
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 22px;
   position: relative;
 }
 .header .header_top .navbar .menu .menu-item .menu-item-link:after {
@@ -105,7 +105,7 @@ body {
 .header .header_top .navbar .menu .menu-item .menu-item-link2 {
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 22px;
   position: relative;
 }
 .header .header_top .navbar .menu .menu-item .menu-item-link2:after {
@@ -129,7 +129,7 @@ body {
 .header .header_bottom .blog-title .logo {
   text-decoration: none;
   color: #fff;
-  font-size: 36px;
+  font-size: 22px;
   cursor: auto;
   padding: 11px 30px;
   background-color: #000;
@@ -143,7 +143,7 @@ body {
   font-size: 18px;
 }
 .footer {
-  height: 180px;
+  height: 100px;
   margin-top: 60px;
   display: flex;
   justify-content: center;
@@ -776,18 +776,16 @@ body {
   min-height: 20rem;
   font-size: 16px;
   padding: 50px 140px 0 140px;
+  text-align: center;
 }
 .about-main-container .about-top {
   text-align: center;
-}
-.about-main-container .about-top img.author-favicon {
   width: 120px;
   height: 120px;
+  margin-right: 50%;
   border-radius: 50%;
   transition: 2.5s all;
-}
-.about-main-container .about-top img.author-favicon:hover {
-  transform: rotate(360deg) scale(1.1);
+  display: inline-block;
 }
 .about-main-container .about-top p.author-name {
   margin-top: 0;
